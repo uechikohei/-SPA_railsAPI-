@@ -1,24 +1,16 @@
-# README
+# railsAPIバックエンド側リポジトリ
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## 操作
 
-Things you may want to cover:
+`docker-compose up --build -d`
 
-* Ruby version
+```
+docker-compose exec app bash
+bundle install　（Gemfileに基づいて更新）
+rails db:migrate:reset　（データベースの更新）
+rails db:seed　（seedファイル記載のデータを投入）
+```
 
-* System dependencies
+## やり残し
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- APIのRspecテスト
